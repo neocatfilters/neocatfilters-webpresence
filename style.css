@@ -1,0 +1,202 @@
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*, :after, :before {
+    box-sizing: inherit;
+}
+
+body {
+    background-image: linear-gradient(#af6976, #7b3759);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    max-width: 100%;
+    min-height: 100vh;
+    color: whitesmoke;
+    height: auto;
+    letter-spacing: 0.1em;
+}
+
+.faqs, .question, .channels, .sources, .supportme {
+    margin-bottom: 15px;
+}
+
+.collapse-item .a {
+    display: block;
+    padding: 1.5rem 0 1.5rem 40px;
+    position: relative;
+    color: #000
+}
+
+.collapse-item .collapse-title {
+    font-size: 2.2em
+}
+
+.collapse-text {
+    font-size: 2em;
+    position: relative;
+    max-height: 0;
+    -webkit-transition: max-height ease-in-out .4s;
+    -moz-transition: max-height ease-in-out .4s;
+    -o-transition: max-height ease-in-out .4s;
+    transition: max-height ease-in-out .4s;
+    overflow: hidden
+}
+
+.collapse-text-inner {
+    padding: 0 0 1rem 40px
+}
+
+.collapse-item.in .collapse-text {
+    position: static;
+    max-height: 99999px
+}
+
+.collapse-item .a:active, .collapse-item .a:focus, .collapse-item .a:hover {
+    text-decoration: none
+}
+
+.collapse-icon {
+    position: absolute;
+    left: 5px;
+    top: 1.7rem;
+    height: 20px;
+    width: 20px;
+    opacity: .5
+}
+
+.collapse-item+.collapse-item .a {
+    padding-top: 0
+}
+
+.collapse-item+.collapse-item .collapse-icon {
+    top: .2rem
+}
+
+.collapse-icon::before {
+    width: 2px;
+    height: 20px;
+    left: 9px;
+    top: 0;
+    opacity: 1
+}
+
+.collapse-icon::after, .collapse-icon::before {
+    content: "";
+    position: absolute;
+    background: #000;
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+    transition: all .4s ease-in-out
+}
+
+.collapse-icon::after {
+    width: 20px;
+    height: 2px;
+    left: 0;
+    top: 9px
+}
+
+.collapse-item.in .collapse-icon::after, .collapse-item.in .collapse-icon::before {
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    transition: all .4s ease-in-out
+}
+
+.collapse-item.in .collapse-icon::before {
+    opacity: 0
+}
+
+.visually-hidden {
+    position: absolute;
+    left: -100vw;
+    /* Note, you may want to position the checkbox over top the label and set the opacity to zero instead. It can be better for accessibilty on some touch devices for discoverability. */
+}
+
+.intro_item {
+    margin-bottom: 15px;
+}
+
+.logo {
+    width: 95px;
+    border-radius: 50%;
+}
+
+h2 {
+    color: #024873
+}
+
+.links_item {
+    display: block;
+    /*max-width: 550px;*/
+    margin: 0 auto 15 px;
+    padding: 15px 20px;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    color: black;
+}
+
+.links__item .links__item--upcoming {
+    border-bottom: 3px solid #ffa093;
+    box-shadow: inset 0 -4px 0 #ffa093;
+    border-radius: 25px;
+    border: 2px solid #ffa093;
+    background-color: #ffa093;
+    text-align: center;
+}
+
+.links_item .links__item--snapchat-which:hover {
+    background-color: #f8b6ae;
+}
+
+.links_item .links__item--snapchat-call:hover {
+    background-color: #f8b6ae;
+}
+
+.links_item .links__item--snapchat-which {
+    border-bottom: 3px solid #ffa093;
+    box-shadow: inset 0 -4px 0 #ffa093;
+    border-radius: 25px;
+    border: 2px solid #ffa093;
+    background-color: #ffa093;
+    text-align: center;
+}
+
+.links_item .links__item--snapchat-call {
+    border-bottom: 3px solid #ffa093;
+    box-shadow: inset 0 -4px 0 #ffa093;
+    border-radius: 25px;
+    border: 2px solid #ffa093;
+    background-color: #ffa093;
+    text-align: center;
+}
+
+.supportme {
+    margin-bottom: 15px;
+}
+
+.channels {
+    display: flex;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.channels .channels__item {
+    flex: 1;
+    margin-right: 5px;
+    transition: transform 0.2s;
+}
+
+.channels__item:hover {
+    transform: scale(1.5);
+}

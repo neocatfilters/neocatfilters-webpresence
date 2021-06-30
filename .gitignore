@@ -1,0 +1,29 @@
+
+# Created by https://www.toptal.com/developers/gitignore/api/web,certificates
+# Edit at https://www.toptal.com/developers/gitignore?templates=web,certificates
+
+### certificates ###
+*.pem
+*.key
+*.crt
+*.cer
+*.priv
+
+### Web ###
+*.asp
+*.csr
+#*.css
+#*.htm
+#*.html
+#*.js
+#*.jsp
+#*.php
+#*.rss
+*.wasm
+*.wat
+#*.xhtml
+
+# to save files which I use as reference or backups
+*.backup
+
+# End of https://www.toptal.com/developers/gitignore/api/web,certificates
